@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'McLaren', cursive; */
+
+html { 
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #eee;
+    padding: 0 20px;
+    position: relative;
+    min-height: 100vh;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+nav {
+    background-color: #f5ba13;
+    margin: auto -20px;
+    padding: 10px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+nav h1 {
+    font-family: 'McLaren', cursive;
+    font-weight: 500;
+    font-size: 28px;
+    color: #fff;
+}
+
+/* Notes  */
+
+.note {
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+    position: relative;
+}
+
+.note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+}
+
+.note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.noteContainer {
+    display: flex;
+    flex-wrap: wrap;    
+    padding-bottom: 3.5rem;
+    margin-top: 1.2rem;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 2px;
+    /* width: 100%; */
+    text-align: center;
+    height: 2.5rem;
+    font-size: 1em;
+    padding-bottom: 1rem;
+}
+
+hr {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 6px;
+    color: #ccc;
+}
+
+
+/* ------------ Create Area ------------ */
+
+form {
+    position: relative;
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form textarea, input {
+    width: 100%;
+    border: none;
+    padding: 7px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+
+}
+
+form button {
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background-color: #f5ba13;
+    color: #fff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    font-family: inherit;
+}
+
+.note button {
+    border: none;
+    outline: none;
+    color: #f5ba13;
+    font-size: 1.1em;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-family: inherit;
+}
+
+.note button:hover {
+    font-weight: bold;
+}
+
+@media(max-width: 550px) {
+    form {
+        width: auto;
+    }
+}
